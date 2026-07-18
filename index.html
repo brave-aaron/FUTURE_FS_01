@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aaron Mensanh KETEVI - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. LOADER / ECRAN D'ACCUEIL ANIMÉ -->
+    <div class="loader-overlay" id="loader">
+        <div class="loader-container">
+            <div class="loader-center">
+                <span class="loader-name">Aaron Mensanh KETEVI</span>
+                <div class="loader-glow"></div>
+            </div>
+            <div class="orbit-system" id="orbit-system">
+                <!-- Les technos seront injectées en JS ici -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. BARRE DE NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">AMK</a>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#journey">Parcours</a></li>
+                <li><a href="#interests">Passions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 3. SECTION HERO -->
+    <header class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Aaron Mensanh KETEVI</h1>
+                <h2 class="hero-subtitle">Développeur Junior / Étudiant en Informatique</h2>
+                <p class="hero-description">
+                    "Passionné par le développement de solutions logicielles modernes, l'administration de bases de données et la conception d'architectures web robustes. Actuellement en programme de stage d'ingénierie logicielle chez Future Interns."
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-placeholder">
+                        <!-- Remplace le chemin de l'image par la tienne si nécessaire -->
+                        <img src="brave1.png" alt="Aaron Mensanh KETEVI" class="profile-img" onerror="this.style.display='none';">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- 4. SECTION À PROPOS -->
+    <section class="about section-animate" id="about">
+        <div class="container">
+            <h2 class="section-title">À Propos de Moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Actuellement étudiant en Licence d'Informatique et stagiaire développeur Full Stack chez Future Interns, j'associe des compétences théoriques avancées en ingénierie logicielle à une solide expérience de terrain. Mon parcours m'a doté d'une grande rigueur opérationnelle, d'une capacité d'adaptation et d'un sens aigu de la précision.
+                    </p>
+                    <p>
+                        Mon objectif est de concevoir des applications performantes, fluides et parfaitement adaptées aux besoins des utilisateurs, tout en garantissant des architectures de bases de données optimisées et sécurisées.
+                    </p>
+                </div>
+                <div class="about-stats" id="about-stats">
+                    <!-- Généré dynamiquement en JS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SECTION COMPÉTENCES TECHNIQUES -->
+    <section class="skills section-animate" id="skills">
+        <div class="container">
+            <h2 class="section-title">Compétences Techniques</h2>
+            <p class="section-subtitle-text">
+                Des fondations académiques solides alliées à un perfectionnement pratique autonome sur des projets opérationnels.
+            </p>
+            <div class="filter-container" id="skills-filter">
+                <!-- Les boutons de filtrage JS viendront ici -->
+            </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Les cartes de compétences JS viendront ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECTION PROJETS -->
+    <section class="projects section-animate" id="projects">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Les cartes de projets JS viendront ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SECTION MON PARCOURS -->
+    <section class="journey section-animate" id="journey">
+        <div class="container">
+            <h2 class="section-title">Mon Parcours</h2>
+            <div class="timeline-wrapper">
+                <div class="timeline-line"></div>
+                <div class="timeline-container" id="timeline-container">
+                    <!-- Les éléments de la timeline JS viendront ici -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. SECTION PASSIONS -->
+    <section class="interests section-animate" id="interests">
+        <div class="container">
+            <h2 class="section-title">Au-delà du Code</h2>
+            <p class="section-subtitle-text">
+                Ce qui forge mon état d'esprit, ma créativité et ma discipline au quotidien.
+            </p>
+            <div class="interests-grid" id="interests-grid">
+                <!-- Les passions JS viendront ici -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. SECTION CONTACT -->
+    <section class="contact section-animate" id="contact">
+        <div class="container">
+            <h2 class="section-title">Me Contacter</h2>
+            <div class="contact-content">
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom Complet</label>
+                        <input type="text" id="name" placeholder="Votre nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" placeholder="votre@email.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" placeholder="Le motif de votre message" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="Votre message..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit-btn">Envoyer le Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3>Discutons de vos projets !</h3>
+                    <p>N'hésitez pas à me contacter pour toute proposition de projet, de stage ou d'échange technique.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/brave-aaron" class="social-link" target="_blank" rel="noreferrer">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="#00d4ff" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mensanh-aaron-ketevi-b04312356/" class="social-link" target="_blank" rel="noreferrer">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z" fill="#00d4ff"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. NOTIFICATION POPUP -->
+    <div id="notification" class="notification-toast"></div>
+
+    <!-- 11. FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Ketevi Mensanh Aaron. Tous droits réservés. | Stage Future Interns</p>
+        </div>
+        <button id="scroll-to-top" class="scroll-to-top" aria-label="Retour en haut">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
